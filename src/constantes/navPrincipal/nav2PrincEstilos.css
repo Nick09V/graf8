@@ -1,0 +1,31 @@
+@keyframes moveAnimation {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(5px, 5px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  .animated-element {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .animated-element:hover {
+    animation: moveAnimation 0.5s ease-in-out;
+  }
+
+  .expansion {
+    transform: scale(1); /* Escala normal */
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+  }
+  
+  .expansion:hover {
+    transform: scale(1.1); /* Escala al pasar el mouse por encima */
+  transition: transform 0.3s ease-in-out; /* Transición suave al volver al estado normal */
+  }
+  
+    
